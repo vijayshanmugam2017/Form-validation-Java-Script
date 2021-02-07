@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/db4557cc7b.js"></script>
+    <link rel="stylesheet" href="../scss/Form.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <img src="../images/background-img.jpg" alt="background-img" id="background1">
+     <div class="container">
+          <div class="header">
+              <h2>Create Account</h2>
+          </div>
+          <form action="" class="form" id="form">
+              <div class="form-control">
+                  <label>User Name</label>
+                  <input type="text" placeholder="Eg.VIJAY S" id="username">
+                  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  <small>Error message</small>
+              </div>
+
+              <div class="form-control">
+                <label>E-Mail</label>
+                <input type="email" placeholder="Eg.vijayshanmugam123@gmail.com" id="email">
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Ateast 6 charaters" id="password">
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Re-Enter Password</label>
+                <input type="text" placeholder="password" id="password-check">
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+
+            <button>Submit</button>
+          </form>
+     </div>
+
+     <!-- cookie -->
+     <section class="cookie" id="cookies">
+        <p>Your informations are not share to anyone</p>
+        <input type="checkbox" value="If you Agree terms and conditions" id="okay" onclick="okcookie();">
+        <label for="">Agree terms and condition</label>
+        <br>
+        <button onclick="back();">Okay</button>
+    </section>
+
+     <script src="../Javasript/form.js"></script>
+</body>
+</html>

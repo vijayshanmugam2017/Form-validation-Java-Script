@@ -1,0 +1,112 @@
+@import '../scss/color';
+
+*{
+    box-sizing: border-box;
+}
+body{
+
+    #background1{
+        margin: 25px;
+    }
+    .container{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        background-color: burlywood;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px black;
+        width: 400px;
+        overflow: hidden;
+        max-width: 100%;
+        .header{
+            padding: 20px 40px;
+            h2{
+                margin: 0;
+            }
+        }
+        .form{
+            padding: 30px 40px;
+            .form-control{
+                position: relative;
+                margin-bottom: 10px;
+                padding-bottom: 20px;
+                label{
+                    display: inline-block;
+                    margin-bottom: 5px;
+                }
+                input{
+                    border:2px solid blue;
+                    border-radius: 4px;
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 14px;
+                }
+                i{
+                    position: absolute;
+                    top: 35px;
+                    right: 10px;
+                    visibility: hidden;
+                }
+                small{
+                    visibility: hidden;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            
+            .form-control.success input{
+                border-color: #2ecc71;
+            }
+
+            .form-control.error input{
+                border-color: #e74c3c;
+            }
+
+            .form-control.success .fa-check-circle-o{
+                visibility: visible;
+                color: #2ecc71;
+            }
+
+            .form-control.error .fa-exclamation-circle{
+                @include error-msg();
+            }
+
+            .form-control.error small{
+                @include error-msg();
+            }            
+            button{
+                background-color: cadetblue;
+                border: 2px solid white;
+                color: white;
+                display: block;
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    // cookies
+    .cookie {
+        border: 1px solid white;
+        border-radius: 1em;
+        text-align: center;
+        width: 50%;
+        background-color: aquamarine;
+        height: 20vh;
+        margin-left: 25%;
+        display: none;
+        bottom: -10%;
+        position: absolute;
+        button{
+            background-color: #1a73e8;
+            color: white;
+        }
+    }
+    .showing{
+        display: block;
+    }
+}

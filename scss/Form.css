@@ -1,0 +1,124 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #background1 {
+  margin: 25px;
+}
+
+body .container {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: burlywood;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px black;
+          box-shadow: 0 2px 5px black;
+  width: 400px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+body .container .header {
+  padding: 20px 40px;
+}
+
+body .container .header h2 {
+  margin: 0;
+}
+
+body .container .form {
+  padding: 30px 40px;
+}
+
+body .container .form .form-control {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+body .container .form .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+body .container .form .form-control input {
+  border: 2px solid blue;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+body .container .form .form-control i {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  visibility: hidden;
+}
+
+body .container .form .form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+body .container .form .form-control.success input {
+  border-color: #2ecc71;
+}
+
+body .container .form .form-control.error input {
+  border-color: #e74c3c;
+}
+
+body .container .form .form-control.success .fa-check-circle-o {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+body .container .form .form-control.error .fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+body .container .form .form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+body .container .form button {
+  background-color: cadetblue;
+  border: 2px solid white;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+body .cookie {
+  border: 1px solid white;
+  border-radius: 1em;
+  text-align: center;
+  width: 50%;
+  background-color: aquamarine;
+  height: 20vh;
+  margin-left: 25%;
+  display: none;
+  bottom: -10%;
+  position: absolute;
+}
+
+body .cookie button {
+  background-color: #1a73e8;
+  color: white;
+}
+
+body .showing {
+  display: block;
+}
+/*# sourceMappingURL=Form.css.map */
